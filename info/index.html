@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Info - News With Memory</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --ink: #17211c;
+        --muted: #5f6f67;
+        --line: #d9e1dc;
+        --paper: #fbfcfb;
+        --accent: #1f6f5b;
+      }
+      body {
+        margin: 0;
+        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        background: var(--paper);
+        color: var(--ink);
+      }
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 56px 22px 72px;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin: 0 0 56px;
+      }
+      a {
+        color: var(--accent);
+      }
+      h1 {
+        font-size: clamp(36px, 7vw, 68px);
+        line-height: 1;
+        margin: 0 0 18px;
+        letter-spacing: 0;
+      }
+      h2 {
+        margin-top: 42px;
+        font-size: 23px;
+      }
+      .lede {
+        font-size: 20px;
+        max-width: 680px;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-top: 28px;
+      }
+      .tile {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+        background: color-mix(in srgb, var(--paper), white 45%);
+      }
+      footer {
+        margin-top: 56px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ink: #e7eee9;
+          --muted: #aab8b0;
+          --line: #314139;
+          --paper: #101713;
+          --accent: #72d2b0;
+        }
+        .tile {
+          background: #14211a;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Info pages">
+        <a href="./privacy/">Privacy</a>
+        <a href="./terms/">Terms</a>
+        <a href="./support/">Support</a>
+      </nav>
+
+      <h1>Info</h1>
+      <p class="lede">
+        News With Memory. Info helps you understand what changed, what evidence
+        supports it, and what signals to watch next.
+      </p>
+      <p>
+        Info turns public media signals from GDELT and app-owned analysis into
+        daily briefs, story timelines, evidence cards, source links, map
+        context, and saved-topic watchlists.
+      </p>
+
+      <section class="grid" aria-label="Info features">
+        <div class="tile">
+          <strong>Daily Brief</strong>
+          <p>Finite context for stories that changed, without an endless feed.</p>
+        </div>
+        <div class="tile">
+          <strong>Story Timelines</strong>
+          <p>See how coverage, sources, entities, and locations evolve.</p>
+        </div>
+        <div class="tile">
+          <strong>Evidence Cards</strong>
+          <p>Inspect source-backed claims and provenance before reacting.</p>
+        </div>
+        <div class="tile">
+          <strong>Map Context</strong>
+          <p>Understand where a story is being reported and discussed.</p>
+        </div>
+      </section>
+
+      <h2>Source And Provenance</h2>
+      <p>
+        Info uses GDELT-derived public media signals and source links to build
+        context. GDELT coverage and app-generated insights are signals, not
+        guarantees that a story is complete, neutral, or error-free. Important
+        decisions should always be checked against original sources.
+      </p>
+
+      <h2>Info Plus</h2>
+      <p>
+        Info Plus is the planned subscription for deeper story memory, premium
+        watchlists, evidence packs, and advanced alerts. Pricing and renewal
+        details are provided by the App Store in the app.
+      </p>
+
+      <footer>
+        <p>Last updated: 30 June 2026.</p>
+        <p>Operated by BoohiCorp Enterprises Oy, Helsinki, Finland.</p>
+      </footer>
+    </main>
+  </body>
+</html>
