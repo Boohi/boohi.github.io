@@ -1,0 +1,5 @@
+# Shared AI portable memory
+!.ai-memory/
+.ai-memory/*
+!.ai-memory/.gitignore
+!.ai-memory/memories.jsonl
